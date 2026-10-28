@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio - 5</title>
+  </head>
+  <body>
+    <script>
+      let jogador = prompt("Pedra, Papel ou Tesoura?");
+      let sorteio = Math.floor(Math.random() * 3) + 1;
+      let computador;
+
+      switch (sorteio) {
+        case 1:
+          computador = "Pedra"; break;
+        case 2:
+          computador = "Papel"; break;
+        case 3:
+          computador = "Tesoura"; break;
+        default:
+            alert ("Digite uma opção válida!");
+      }
+
+      alert ("O computador jogou: " + computador);
+
+      if (jogador === computador) {
+        alert ("Empate!");
+      } else if (jogador === "Pedra" && computador === "Tesoura") {
+        alert ("Você ganhou!!!");
+      } else if (jogador === "Tesoura" && computador === "Pedra") {
+        alert ("Você perdeu!!!");
+      } else if (jogador === "Papel" && computador === "Tesoura") {
+        alert ("Você perdeu!!!");
+      } else if (jogador === "Tesoura" && computador === "Papel") {
+        alert ("Você ganhou!!!");
+      } else if (jogador === "Papel" && computador === "Pedra") {
+        alert ("Você ganhou!!!");
+      } else if (jogador === "Pedra" && computador === "Papel") {
+        alert ("Você perdeu!!!");
+      } else {
+        alert ("Opção inválida...");
+      }
+
+    </script>
+  </body>
+</html>

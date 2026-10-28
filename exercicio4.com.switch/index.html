@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio - 4</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+
+    <script>
+      let n1 = Number(prompt("Primeiro numero: "));
+      let op = prompt("Operação: '+' , '-' , '*' , '/' , ");
+      let n2 = Number(prompt("Segundo numero: "));
+
+      switch (op) {
+        case "+":
+          alert(n1 + n2);
+          break;
+        case "-":
+          alert(n1 - n2);
+          break;
+        case "*":
+          alert(n1 * n2);
+          break;
+        case "/":
+          alert(n1 / n2);
+          break;
+        default:
+          alert("Operação inválida/Numero inválido");
+      }
+
+    </script>
+  </body>
+</html>
