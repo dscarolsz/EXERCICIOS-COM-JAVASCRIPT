@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofre</title>
+</head>
+<body>
+    
+    <script>
+        let porSemana = Number (prompt("Quanto por semana?"))
+        let cofre = 0;
+        let semana = 0;
+
+        while (cofre < 50) {
+            semana++;
+            cofre = cofre + porSemana;
+            alert ("Semana " + semana + ": R$ " + cofre)
+        }
+        alert ("Meta batida em " + semana + " semanas!")
+
+    </script>
+
+</body>
+</html>
